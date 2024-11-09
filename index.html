@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZEAR - Decentralized Finance Platform</title>
+    <title>ZEAR - AI-Powered DeFi Platform</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -34,6 +34,12 @@
             50% { transform: translateY(-10px); }
             100% { transform: translateY(0px); }
         }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
     </style>
 </head>
 <body class="gradient-bg text-white min-h-screen">
@@ -46,12 +52,13 @@
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="hover:text-gray-300">Features</a>
+                    <a href="#ai-chat" class="hover:text-gray-300">AI Chat</a>
                     <a href="#ecosystem" class="hover:text-gray-300">Ecosystem</a>
-                    <a href="#community" class="hover:text-gray-300">Community</a>
+                    <a href="#roadmap" class="hover:text-gray-300">Roadmap</a>
                     <a href="https://github.com/your-username/ZEAR" target="_blank" class="hover:text-gray-300">GitHub</a>
                 </div>
-                <a href="https://app.zear.com" class="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors">
-                    Launch App
+                <a href="/chat" class="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors">
+                    Try AI Chat
                 </a>
             </div>
         </div>
@@ -59,21 +66,43 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="pt-32 pb-20 px-6">
+        <section class="min-h-screen flex items-center justify-center px-6 pt-20">
             <div class="container mx-auto text-center">
-                <h1 class="text-5xl md:text-7xl font-bold mb-8">
-                    The Future of <span class="text-blue-500">DeFi</span>
-                </h1>
-                <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
-                    ZEAR is revolutionizing decentralized finance with AI-powered chat interactions and seamless token exchanges.
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Experience AI-Powered DeFi</h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                    ZEAR combines artificial intelligence with decentralized finance to create a unique and engaging platform
                 </p>
-                <div class="flex justify-center space-x-6">
-                    <a href="#" class="bg-blue-500 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition-colors">
-                        Get Started
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="/chat" class="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors">
+                        Start Chatting
                     </a>
-                    <a href="#" class="border border-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-black transition-colors">
-                        Documentation
+                    <a href="#features" class="border border-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-colors">
+                        Learn More
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Chat Section -->
+        <section id="ai-chat" class="py-20 px-6">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">AI Characters</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="glass-card p-6 rounded-2xl hover-scale">
+                        <img src="/gm.jpeg" alt="Grandma Character" class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-center">智慧奶奶</h3>
+                        <p class="text-gray-300 text-center">溫暖貼心的AI奶奶，隨時為您解答問題</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl hover-scale">
+                        <img src="/god.png" alt="God Character" class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-center">智慧神明</h3>
+                        <p class="text-gray-300 text-center">智慧如神的AI助手，為您指點迷津</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl hover-scale">
+                        <img src="/master.jpeg" alt="Master Character" class="w-24 h-24 mx-auto rounded-full mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-center">智慧大師</h3>
+                        <p class="text-gray-300 text-center">博學多聞的AI大師，分享深邃智慧</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -83,36 +112,62 @@
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Key Features</h2>
                 <div class="grid md:grid-cols-3 gap-12">
-                    <div class="bg-black/30 p-8 rounded-2xl hover-scale">
-                        <div class="text-blue-500 text-4xl mb-4">🤖</div>
+                    <div class="glass-card p-8 rounded-2xl hover-scale">
+                        <div class="text-4xl mb-4">🤖</div>
                         <h3 class="text-xl font-semibold mb-4">AI Chat Integration</h3>
-                        <p class="text-gray-300">Interact with various AI characters for a unique and engaging experience.</p>
+                        <p class="text-gray-300">Multiple AI characters providing unique perspectives and guidance</p>
                     </div>
-                    <div class="bg-black/30 p-8 rounded-2xl hover-scale">
-                        <div class="text-blue-500 text-4xl mb-4">💱</div>
-                        <h3 class="text-xl font-semibold mb-4">Token Exchange</h3>
-                        <p class="text-gray-300">Seamlessly exchange ZEAR tokens with other cryptocurrencies.</p>
+                    <div class="glass-card p-8 rounded-2xl hover-scale">
+                        <div class="text-4xl mb-4">🎯</div>
+                        <h3 class="text-xl font-semibold mb-4">Personalized Experience</h3>
+                        <p class="text-gray-300">Customized interactions based on your preferences and needs</p>
                     </div>
-                    <div class="bg-black/30 p-8 rounded-2xl hover-scale">
-                        <div class="text-blue-500 text-4xl mb-4">🔒</div>
+                    <div class="glass-card p-8 rounded-2xl hover-scale">
+                        <div class="text-4xl mb-4">🔒</div>
                         <h3 class="text-xl font-semibold mb-4">Secure Platform</h3>
-                        <p class="text-gray-300">Built on blockchain technology ensuring maximum security and transparency.</p>
+                        <p class="text-gray-300">Built with advanced security measures to protect your interactions</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Community Section -->
-        <section id="community" class="py-20 px-6">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-16">Join Our Community</h2>
-                <div class="flex justify-center space-x-8">
-                    <a href="#" class="hover-scale">
-                        <img src="https://img.shields.io/twitter/follow/zearplatform?style=social" alt="Twitter Follow">
-                    </a>
-                    <a href="#" class="hover-scale">
-                        <img src="https://img.shields.io/github/stars/your-username/ZEAR?style=social" alt="GitHub stars">
-                    </a>
+        <!-- Roadmap Section -->
+        <section id="roadmap" class="py-20 px-6">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Development Roadmap</h2>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h3 class="text-xl font-semibold mb-4">Phase 1</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>✓ AI Chat Platform Launch</li>
+                            <li>✓ Multiple AI Characters</li>
+                            <li>✓ Basic Interaction Features</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h3 class="text-xl font-semibold mb-4">Phase 2</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>Voice Integration</li>
+                            <li>Enhanced AI Responses</li>
+                            <li>Community Features</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h3 class="text-xl font-semibold mb-4">Phase 3</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>Mobile App Release</li>
+                            <li>Advanced AI Models</li>
+                            <li>Custom Character Creation</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h3 class="text-xl font-semibold mb-4">Phase 4</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>Global Expansion</li>
+                            <li>AI-Powered Analytics</li>
+                            <li>Enterprise Solutions</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
