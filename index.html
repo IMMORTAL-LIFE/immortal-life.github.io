@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEAR - Decentralized Finance Platform</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a1a1a 0%, #363636 100%);
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="gradient-bg text-white min-h-screen">
+    <nav class="fixed w-full bg-black/30 backdrop-blur-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="/god.png" alt="ZEAR Logo" class="h-8 w-8">
+                    <span class="text-xl font-bold">ZEAR</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-gray-300">Features</a>
+                    <a href="#ecosystem" class="hover:text-gray-300">Ecosystem</a>
+                    <a href="#community" class="hover:text-gray-300">Community</a>
+                    <a href="https://github.com/your-username/ZEAR" target="_blank" class="hover:text-gray-300">GitHub</a>
+                </div>
+                <a href="https://app.zear.com" class="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-200 transition-colors">
+                    Launch App
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 px-6">
+            <div class="container mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-8">
+                    The Future of <span class="text-blue-500">DeFi</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+                    ZEAR is revolutionizing decentralized finance with AI-powered chat interactions and seamless token exchanges.
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="bg-blue-500 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition-colors">
+                        Get Started
+                    </a>
+                    <a href="#" class="border border-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-black transition-colors">
+                        Documentation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 px-6 bg-black/20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Key Features</h2>
+                <div class="grid md:grid-cols-3 gap-12">
+                    <div class="bg-black/30 p-8 rounded-2xl hover-scale">
+                        <div class="text-blue-500 text-4xl mb-4">🤖</div>
+                        <h3 class="text-xl font-semibold mb-4">AI Chat Integration</h3>
+                        <p class="text-gray-300">Interact with various AI characters for a unique and engaging experience.</p>
+                    </div>
+                    <div class="bg-black/30 p-8 rounded-2xl hover-scale">
+                        <div class="text-blue-500 text-4xl mb-4">💱</div>
+                        <h3 class="text-xl font-semibold mb-4">Token Exchange</h3>
+                        <p class="text-gray-300">Seamlessly exchange ZEAR tokens with other cryptocurrencies.</p>
+                    </div>
+                    <div class="bg-black/30 p-8 rounded-2xl hover-scale">
+                        <div class="text-blue-500 text-4xl mb-4">🔒</div>
+                        <h3 class="text-xl font-semibold mb-4">Secure Platform</h3>
+                        <p class="text-gray-300">Built on blockchain technology ensuring maximum security and transparency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="py-20 px-6">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-16">Join Our Community</h2>
+                <div class="flex justify-center space-x-8">
+                    <a href="#" class="hover-scale">
+                        <img src="https://img.shields.io/twitter/follow/zearplatform?style=social" alt="Twitter Follow">
+                    </a>
+                    <a href="#" class="hover-scale">
+                        <img src="https://img.shields.io/github/stars/your-username/ZEAR?style=social" alt="GitHub stars">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black/30 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <img src="/god.png" alt="ZEAR Logo" class="h-8 w-8 mb-4">
+                    <p class="text-gray-400">© 2024 ZEAR. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="#" class="text-gray-400 hover:text-white">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
